@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Liv Lindinger | Actress</title>
+<meta name="description" content="Liv Lindinger — actress, musician, and artist. Reel, resume, and contact." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="nav">
+      <span class="nav-name">LIV LINDINGER</span>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#reel">Reel</a>
+        <a href="#connect">Connect</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="headshot-frame">
+        <img src="images/headshot.jpg" alt="Liv Lindinger headshot" class="headshot" onerror="this.parentElement.classList.add('headshot-fallback')">
+        <div class="headshot-placeholder">LL</div>
+      </div>
+      <h1>Liv Lindinger</h1>
+      <p class="tagline">Actress &middot; Musician &middot; Artist</p>
+      <div class="hero-actions">
+        <a href="#reel" class="btn btn-primary">Watch Reel</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p class="lead">
+        Liv is a theater student and actress with a passion for storytelling on stage and screen.
+        Add a few sentences here about training, what drives you as a performer, and what kind of
+        roles or projects you're excited about.
+      </p>
+    </section>
+
+    <section id="reel" class="section section-alt">
+      <h2>Reel</h2>
+      <div class="reel-grid">
+        <div class="reel-embed">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7362841373546344449?compact=1" height="399" width="504" frameborder="0" allowfullscreen title="Embedded post"></iframe>
+        </div>
+        <div class="reel-embed">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7353188904574873600?compact=1" height="399" width="504" frameborder="0" allowfullscreen title="Embedded post"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="section">
+      <h2>Resume</h2>
+      <p class="lead">
+        Add a one-line summary of training and credits here, with a button linking to a downloadable
+        PDF resume.
+      </p>
+      <a href="resume.pdf" class="btn btn-outline">Download Resume (PDF)</a>
+    </section>
+
+    <section id="connect" class="section section-alt">
+      <h2>Connect</h2>
+      <div class="social-grid">
+        <a href="https://www.instagram.com/downthe0ctave" target="_blank" rel="noopener" class="social-card">Instagram</a>
+        <a href="https://www.tiktok.com/@downthe0ctave" target="_blank" rel="noopener" class="social-card">TikTok</a>
+        <a href="https://www.facebook.com/downthe0ctave" target="_blank" rel="noopener" class="social-card">Facebook</a>
+        <a href="https://www.linkedin.com/in/liv-lindinger-816892306" target="_blank" rel="noopener" class="social-card">LinkedIn</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <h2>Contact</h2>
+      <p class="lead">For bookings, representation, or collaborations:</p>
+      <a href="mailto:oliviaemma000@gmail.com" class="btn btn-primary">Email Me</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Liv Lindinger. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Liv Lindinger | Actress</title>
+<meta name="description" content="Liv Lindinger — actress, musician, and artist." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+  <nav class="nav">
+    <span class="nav-name">LIV LINDINGER</span>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#reel">Reel</a>
+      <a href="#connect">Connect</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO with parallax layers -->
+  <header class="hero" id="hero">
+    <div class="parallax-layer" data-speed="0.15" style="--layer:1"></div>
+    <div class="parallax-layer spotlight-a" data-speed="0.3"></div>
+    <div class="parallax-layer spotlight-b" data-speed="0.45"></div>
+    <div class="parallax-layer curtain-left" data-speed="0.25"></div>
+    <div class="parallax-layer curtain-right" data-speed="0.25"></div>
+
+    <div class="hero-content parallax-layer" data-speed="0.55">
+      <div class="headshot-frame">
+        <img src="images/headshot.jpg" alt="Liv Lindinger headshot" class="headshot" onerror="this.parentElement.classList.add('headshot-fallback')">
+        <div class="headshot-placeholder">LL</div>
+      </div>
+      <h1>Liv Lindinger</h1>
+      <p class="tagline">Musician &middot; Artist &middot; Actress</p>
+      <div class="hero-actions">
+        <a href="#reel" class="btn btn-primary">Watch Reel</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </header>
+
+  <main>
+    <!-- ABOUT with parallax background -->
+    <section id="about" class="section parallax-section">
+      <div class="parallax-layer parallax-bg" data-speed="0.2"></div>
+      <div class="section-inner reveal">
+        <h2>About</h2>
+        <p class="lead">
+          Liv is a theater student and actress with a passion for storytelling on stage and screen.
+          Add a few sentences here about training, what drives you as a performer, and what kind of
+          roles or projects you're excited about.
+        </p>
+      </div>
+    </section>
+
+    <section id="reel" class="section">
+      <div class="section-inner reveal">
+        <h2>Reel</h2>
+        <div class="reel-grid">
+          <div class="reel-embed">
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7362841373546344449?compact=1" height="399" width="504" frameborder="0" allowfullscreen title="Embedded post"></iframe>
+          </div>
+          <div class="reel-embed">
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7353188904574873600?compact=1" height="399" width="504" frameborder="0" allowfullscreen title="Embedded post"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="section parallax-section">
+      <div class="parallax-layer parallax-bg parallax-bg-alt" data-speed="0.2"></div>
+      <div class="section-inner reveal">
+        <h2>Resume</h2>
+        <p class="lead">
+          Add a one-line summary of training and credits here, with a button linking to a downloadable
+          PDF resume.
+        </p>
+        <a href="resume.pdf" class="btn btn-outline">Download Resume (PDF)</a>
+      </div>
+    </section>
+
+    <section id="connect" class="section">
+      <div class="section-inner reveal">
+        <h2>Connect</h2>
+        <div class="social-grid">
+          <a href="https://www.instagram.com/downthe0ctave" target="_blank" rel="noopener" class="social-card">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.8 6a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/></svg>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.tiktok.com/@downthe0ctave" target="_blank" rel="noopener" class="social-card">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M14 2h3a5.7 5.7 0 0 0 4 4v3a8.6 8.6 0 0 1-4-1.1V14a6 6 0 1 1-6-6 6.2 6.2 0 0 1 1 .1v3.2a3 3 0 1 0 2 2.8z"/></svg>
+            <span>TikTok</span>
+          </a>
+          <a href="https://www.facebook.com/downthe0ctave" target="_blank" rel="noopener" class="social-card">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M13 22v-8h2.7l.5-3H13V9c0-1 .3-1.6 1.7-1.6H16V4.7A14 14 0 0 0 13.8 4.5c-2.4 0-4 1.5-4 4.1V11H7.5v3H9.8v8z"/></svg>
+            <span>Facebook</span>
+          </a>
+          <a href="https://www.linkedin.com/in/liv-lindinger-816892306" target="_blank" rel="noopener" class="social-card">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M6.5 8.7H3.7V20h2.8zM5.1 4a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2zM20.3 20v-6.2c0-3.3-1.8-4.9-4.2-4.9a3.6 3.6 0 0 0-3.3 1.8h0V8.7H10v11.3h2.8v-6.3c0-1.7 1-2.5 2-2.5s1.9.6 1.9 2.5V20z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section parallax-section">
+      <div class="parallax-layer parallax-bg" data-speed="0.2"></div>
+      <div class="section-inner reveal">
+        <h2>Contact</h2>
+        <p class="lead">For bookings, representation, or collaborations:</p>
+        <a href="mailto:oliviaemma000@gmail.com" class="btn btn-primary">Email Me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Liv Lindinger. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
