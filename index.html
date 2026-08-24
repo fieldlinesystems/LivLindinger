@@ -50,7 +50,9 @@
 
     <div class="hero-content parallax-layer" data-speed="0.55">
       <div class="headshot-frame">
-        <img src="images/headshot.jpg" alt="Liv Lindinger headshot" class="headshot" onerror="this.parentElement.classList.add('headshot-fallback')">
+        <a href="images/headshot.jpg" target="_blank" rel="noopener" class="headshot-link" aria-label="Open Liv Lindinger's full-size headshot in a new tab">
+          <img src="images/headshot.jpg" alt="Liv Lindinger headshot" class="headshot" onerror="this.closest('.headshot-frame').classList.add('headshot-fallback')">
+        </a>
         <div class="headshot-placeholder">LL</div>
       </div>
       <h1>Liv Lindinger</h1>

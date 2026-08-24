@@ -137,6 +137,8 @@ a { color: inherit; text-decoration: none; }
 }
 
 .headshot { width: 100%; height: 100%; object-fit: cover; display: block; }
+.headshot-link { display: block; width: 100%; height: 100%; cursor: zoom-in; }
+.headshot-fallback .headshot-link { display: none; }
 .headshot-placeholder { display: none; font-family: 'Playfair Display', serif; font-size: 3rem; color: var(--gold); }
 .headshot-fallback .headshot { display: none; }
 .headshot-fallback .headshot-placeholder { display: block; }
