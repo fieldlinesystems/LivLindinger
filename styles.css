@@ -206,11 +206,13 @@ a { color: inherit; text-decoration: none; }
 .lead { max-width: 640px; color: rgba(247,243,236,0.85); }
 .section:not(.parallax-section) .lead { color: #45414a; }
 
+.about-section .section-inner { text-align: center; }
+.about-section .lead { margin-left: auto; margin-right: auto; }
 .about-cta { text-align: center; margin-top: 2rem; }
 
 .reel-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
   justify-content: center;
 }
@@ -238,6 +240,7 @@ a { color: inherit; text-decoration: none; }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
+  max-width: 420px;
 }
 
 .social-card {
@@ -285,6 +288,13 @@ a { color: inherit; text-decoration: none; }
   .nav-links { gap: 1rem; font-size: 0.8rem; }
   .headshot-frame { width: 150px; height: 150px; }
   .section { padding: 4.5rem 1.25rem; }
+  .reel-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 360px) {
+  .nav { padding: 1.1rem 1.1rem; }
+  .nav-name { font-size: 0.8rem; }
+  .nav-links { gap: 0.7rem; font-size: 0.75rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
